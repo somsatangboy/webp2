@@ -1,0 +1,36 @@
+<!--태그의 id값은 타 프로그래밍 언어와 동일한 변수명의 선언이므로 어떠한 이름이 들어가도 무방하다 -->
+<!-- 태그 id 값은 스타일 속성기능값을줄때는 div태그의 id값이 들어갈경우 id태그를 사용할시 제일 우선순위로 인식 처리 된다.-->
+<!-- link 태그를 사용할시 중복된 코드를 쉽게 제거할수있다. 즉 코드의 가독성을 좀더 높힐수 있으면서 , 손쉽게 수정이 가능하다 -->
+<!-- <link re="stylesheet" href="css파일명"> link 태그 사용코드-->
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>HTML문서</title>
+  <meta charset="utf-8">
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .html {
+      color : red;
+    }
+    .nametitle {
+      color : gray;
+      border: 5px solid pink;
+    }
+    div {
+      border: 5px solid gray;
+      display: inline;
+    }
+    </style>
+  <body>
+    <h1 class="nametitle">HTML에 관련된 정보 입니다.</h1>
+    <div><a href="index.html">본사이트로 돌아가기</a></div>
+    <li><a href="1.html" class="html">HTML</a></li>
+    </body>
+</html>
